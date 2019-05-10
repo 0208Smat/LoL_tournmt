@@ -15,16 +15,21 @@ h1 {
   font-family: "Merriweather", serif;
   font-size: 2rem;
 }
-.header-links{
-  position: absolute;
-  display: inline-block;
-  right: 8px;
+.header{
+  padding:50px;
+  background-color: dimgrey;
+}
+.header-links {
   text-align: right;
 }
 .header-links span{
   margin: 0 30px;
 }
-footer, header{
+.header img{
+	height:250px;
+	width:250px;
+}
+footer{
   background-color: dimgrey;
   position: relative;
 }
