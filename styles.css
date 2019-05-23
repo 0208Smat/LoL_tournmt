@@ -42,7 +42,7 @@ hr {
 .main {/*cuerpo de la parte principal */
   position: relative;
   border-radius: 20px;
-  padding: 50px;
+  padding: 75px;
   background-image: url(img/trophy.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -53,9 +53,11 @@ hr {
   text-shadow: 2px 2px 4px #000000;
   right: 0;
   left: 0;
+  /* margin-bottom: 150px; */
 }
 .main-header h1{
   margin-top: 0;
+
 }
 .main-header span {
   font-style: italic;
@@ -66,6 +68,8 @@ hr {
 .formulario{
   text-align: center;
   width: 50%;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 .myButton {/*el boton de mierda*/
 	-moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
@@ -82,6 +86,8 @@ hr {
 	-moz-border-radius:42px;
 	-webkit-border-radius:42px;
 	border-radius:42px;
+  height: 150px;
+  width: 350px;
   border: 0;
 	display:inline-block;
 	cursor:pointer;
@@ -89,6 +95,8 @@ hr {
 	padding:9px 23px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #263666;
+  font-size: 1.6rem;
+
 }
 .myButton:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0688fa), color-stop(1, #2dabf9));
