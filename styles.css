@@ -11,13 +11,17 @@ a{
 fieldset{/*Esto es el borde del formulario*/
   border-radius: 20px;
 }
+img{
+  max-width: 100%;
+  height: auto;
+}
 .block {/*header*/
-  border-radius: 20px;
+border-radius: 20px;
 position: relative;
 background-color: #323232;
 background-image: url(img/banner.jpg);
-background-size: 100%;
-height: 175px;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 .header-images {/*container de imagenes de header*/
@@ -44,12 +48,21 @@ hr {
   border-radius: 20px;
   padding: 75px;
   background-image: url(img/trophy.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
+  /* background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+/*CONFIG RECOMENDADA PARA RESPONSIVE----------------------------------------------------*/
+  background-repeat:no-repeat;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+background-position:center;
 }
 
 .main-header {
-  font-size: 1.5rem;
+  font-size: 1.75vw;
+  /* font-size: 1.5rem; */
   text-shadow: 2px 2px 4px #000000;
   right: 0;
   left: 0;
@@ -70,6 +83,10 @@ hr {
   width: 50%;
   margin-top: 120px;
   margin-bottom: 120px;
+  font-size: 2vw;
+  text-shadow: 2px 2px 4px #000000;
+  right: 0;
+  left: 0;
 }
 .myButton {/*el boton de mierda*/
 	-moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
@@ -86,8 +103,8 @@ hr {
 	-moz-border-radius:42px;
 	-webkit-border-radius:42px;
 	border-radius:42px;
-  height: 150px;
-  width: 350px;
+  height: 15vw;
+  width: 35vw;
   border: 0;
 	display:inline-block;
 	cursor:pointer;
@@ -95,7 +112,7 @@ hr {
 	padding:9px 23px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #263666;
-  font-size: 1.6rem;
+  font-size: 3vw;
 
 }
 .myButton:hover {
@@ -113,7 +130,7 @@ hr {
 	top:1px;
 }
 
-footer {/* parte inferior de la pagina*/
+.footer {/* parte inferior de la pagina*/
   border-radius: 20px;
   background-color: #323232;
   position: relative;
@@ -123,6 +140,7 @@ footer {/* parte inferior de la pagina*/
 }
 .contacto {/*contenedor de bloque de info de contacto, direccion y eso*/
   display: inline-block;
+  width: 18%;
 }
 .contacto p {
   font-size: 0.8rem;
@@ -131,13 +149,15 @@ footer {/* parte inferior de la pagina*/
 .redes-container{/*contenedor de iconos de redes sociales*/
   text-align: center;
     display: inline-block;
-    top: 45%;
-    left: 590px;
-    margin: auto;
-    position: absolute;
+        width: 81%;
 }
 .redes{
   display: inline-block;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 .redes img{
   margin: 0 30px;
